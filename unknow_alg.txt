@@ -1,0 +1,75 @@
+
+unknow_alg.image:     file format elf32-tradbigmips
+
+Disassembly of section .text:
+
+00000800 <main>:
+ 800:	3c082000 	lui	t0,0x2000
+ 804:	24090005 	li	t1,5
+ 808:	2402000a 	li	v0,10
+ 80c:	ad020000 	sw	v0,0(t0)
+ 810:	2402005c 	li	v0,92
+ 814:	ad020004 	sw	v0,4(t0)
+ 818:	24020037 	li	v0,55
+ 81c:	ad020008 	sw	v0,8(t0)
+ 820:	24020001 	li	v0,1
+ 824:	ad02000c 	sw	v0,12(t0)
+ 828:	2402002e 	li	v0,46
+ 82c:	ad020010 	sw	v0,16(t0)
+ 830:	00003821 	move	a3,zero
+ 834:	252affff 	addiu	t2,t1,-1
+ 838:	01271023 	subu	v0,t1,a3
+ 83c:	2442ffff 	addiu	v0,v0,-1
+ 840:	18400012 	blez	v0,88c <main+0x8c>
+ 844:	00002821 	move	a1,zero
+ 848:	01271023 	subu	v0,t1,a3
+ 84c:	2446ffff 	addiu	a2,v0,-1
+ 850:	00051080 	sll	v0,a1,0x2
+ 854:	00482021 	addu	a0,v0,t0
+ 858:	8c820004 	lw	v0,4(a0)
+ 85c:	8c830000 	lw	v1,0(a0)
+ 860:	0043102a 	slt	v0,v0,v1
+ 864:	10400005 	beqz	v0,87c <main+0x7c>
+ 868:	00000000 	nop
+ 86c:	8c830000 	lw	v1,0(a0)
+ 870:	8c820004 	lw	v0,4(a0)
+ 874:	ac820000 	sw	v0,0(a0)
+ 878:	ac830004 	sw	v1,4(a0)
+ 87c:	24a50001 	addiu	a1,a1,1
+ 880:	00a6102a 	slt	v0,a1,a2
+ 884:	1440fff3 	bnez	v0,854 <main+0x54>
+ 888:	00051080 	sll	v0,a1,0x2
+ 88c:	24e70001 	addiu	a3,a3,1
+ 890:	00ea102a 	slt	v0,a3,t2
+ 894:	1440ffe8 	bnez	v0,838 <main+0x38>
+ 898:	00001021 	move	v0,zero
+ 89c:	03e00008 	jr	ra
+ 8a0:	00000000 	nop
+Disassembly of section .comment:
+
+00000000 <.comment>:
+   0:	00474343 	0x474343
+   4:	3a202847 	xori	zero,s1,0x2847
+   8:	4e552920 	c3	0x552920
+   c:	332e342e 	andi	t6,t9,0x342e
+  10:	34206d69 	ori	zero,at,0x6d69
+  14:	70737364 	0x70737364
+  18:	652d362e 	0x652d362e
+  1c:	30362e30 	andi	s6,at,0x2e30
+  20:	312d3230 	andi	t5,t1,0x3230
+  24:	30373034 	andi	s7,at,0x3034
+  28:	Address 0x28 is out of bounds.
+
+Disassembly of section .reginfo:
+
+0000002c <.reginfo>:
+  2c:	800007fc 	lb	zero,2044(zero)
+	...
+  40:	000088a0 	0x88a0
+Disassembly of section .pdr:
+
+00000000 <.pdr>:
+   0:	00000800 	sll	at,zero,0x0
+	...
+  18:	0000001d 	0x1d
+  1c:	0000001f 	0x1f
