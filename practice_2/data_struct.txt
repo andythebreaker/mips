@@ -1,0 +1,91 @@
+
+data_struct.image:     file format elf32-tradbigmips
+
+Disassembly of section .text:
+
+00000800 <main>:
+ 800:	27bdffd0 	addiu	sp,sp,-48
+ 804:	afbe0028 	sw	s8,40(sp)
+ 808:	03a0f021 	move	s8,sp
+ 80c:	3c022000 	lui	v0,0x2000
+ 810:	afc20000 	sw	v0,0(s8)
+ 814:	3c022000 	lui	v0,0x2000
+ 818:	34420020 	ori	v0,v0,0x20
+ 81c:	afc20004 	sw	v0,4(s8)
+ 820:	3c020000 	lui	v0,0x0
+ 824:	8c4408b4 	lw	a0,2228(v0)
+ 828:	244308b4 	addiu	v1,v0,2228
+ 82c:	8c630004 	lw	v1,4(v1)
+ 830:	244208b4 	addiu	v0,v0,2228
+ 834:	8c420008 	lw	v0,8(v0)
+ 838:	afc40008 	sw	a0,8(s8)
+ 83c:	afc3000c 	sw	v1,12(s8)
+ 840:	afc20010 	sw	v0,16(s8)
+ 844:	3c020000 	lui	v0,0x0
+ 848:	8c4408c0 	lw	a0,2240(v0)
+ 84c:	244308c0 	addiu	v1,v0,2240
+ 850:	8c630004 	lw	v1,4(v1)
+ 854:	244208c0 	addiu	v0,v0,2240
+ 858:	8c420008 	lw	v0,8(v0)
+ 85c:	afc40018 	sw	a0,24(s8)
+ 860:	afc3001c 	sw	v1,28(s8)
+ 864:	afc20020 	sw	v0,32(s8)
+ 868:	8fc20000 	lw	v0,0(s8)
+ 86c:	8fc30008 	lw	v1,8(s8)
+ 870:	8fc4000c 	lw	a0,12(s8)
+ 874:	8fc50010 	lw	a1,16(s8)
+ 878:	ac430000 	sw	v1,0(v0)
+ 87c:	ac440004 	sw	a0,4(v0)
+ 880:	ac450008 	sw	a1,8(v0)
+ 884:	8fc20004 	lw	v0,4(s8)
+ 888:	8fc30018 	lw	v1,24(s8)
+ 88c:	8fc4001c 	lw	a0,28(s8)
+ 890:	8fc50020 	lw	a1,32(s8)
+ 894:	ac430000 	sw	v1,0(v0)
+ 898:	ac440004 	sw	a0,4(v0)
+ 89c:	ac450008 	sw	a1,8(v0)
+ 8a0:	03c0e821 	move	sp,s8
+ 8a4:	8fbe0028 	lw	s8,40(sp)
+ 8a8:	27bd0030 	addiu	sp,sp,48
+ 8ac:	03e00008 	jr	ra
+ 8b0:	00000000 	nop
+Disassembly of section .rodata:
+
+000008b4 <.rodata>:
+ 8b4:	0000003c 	0x3c
+ 8b8:	00000046 	rorv	zero,zero,zero
+ 8bc:	00000046 	rorv	zero,zero,zero
+ 8c0:	00000046 	rorv	zero,zero,zero
+ 8c4:	00000032 	tlt	zero,zero
+ 8c8:	00000050 	0x50
+Disassembly of section .comment:
+
+00000000 <.comment>:
+   0:	00474343 	0x474343
+   4:	3a202847 	xori	zero,s1,0x2847
+   8:	4e552920 	c3	0x552920
+   c:	332e342e 	andi	t6,t9,0x342e
+  10:	34206d69 	ori	zero,at,0x6d69
+  14:	70737364 	0x70737364
+  18:	652d362e 	0x652d362e
+  1c:	30362e30 	andi	s6,at,0x2e30
+  20:	312d3230 	andi	t5,t1,0x3230
+  24:	30373034 	andi	s7,at,0x3034
+  28:	Address 0x28 is out of bounds.
+
+Disassembly of section .reginfo:
+
+0000002c <.reginfo>:
+  2c:	e000003c 	sc	zero,60(zero)
+	...
+  40:	000088c0 	sll	s1,zero,0x3
+Disassembly of section .pdr:
+
+00000000 <.pdr>:
+   0:	00000800 	sll	at,zero,0x0
+   4:	40000000 	mfc0	zero,c0_index
+   8:	fffffff8 	sdc3	$31,-8(ra)
+	...
+  14:	00000030 	tge	zero,zero
+  18:	0000001e 	0x1e
+  1c:	0000001f 	0x1f
